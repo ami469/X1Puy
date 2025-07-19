@@ -71,7 +71,7 @@ async def delayspam_forward(client, message):
     try:
         args = message.text.split()
         if len(args) < 5:
-            await message.reply("Gunakan format:\n`/delayspamf dari_chat_id msg_id jumlah delay`")
+            await message.reply("Gunakan format:\n`.delayspamf dari_chat_id msg_id jumlah delay`")
             return
 
         from_chat = int(args[1]) if args[1].lstrip("-").isdigit() else args[1]
