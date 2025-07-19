@@ -66,7 +66,7 @@ async def spam_handler(client, message):
     for _ in range(count):
         await message.reply(text)
 
-@userbot.on_message(filters.me & filters.command("delayspamf", prefixes=".")
+@userbot.on_message(filters.me & filters.command("delayspamf", prefixes="."))
 async def delayspam_forward(client, message):
     try:
         args = message.text.split()
