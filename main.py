@@ -45,7 +45,6 @@ def get_help_page(page=1):
         return InlineKeyboardMarkup([
             [InlineKeyboardButton("Restart", callback_data="restart"),
              InlineKeyboardButton("Gcast", callback_data="gcast")],
-             InlineKeyboardButton("Delayspamf", callback_data="delayspamf")],
             [InlineKeyboardButton("⬅️", callback_data="help_page1")]
         ])
 
